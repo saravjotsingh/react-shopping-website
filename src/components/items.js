@@ -125,7 +125,8 @@ open=()=>{
 		})
 		return(
 				<div>
-				<h1 className="text-center">Items</h1>
+				<h1 className="text-center">Things To Buy!</h1>
+				<hr/>
 				
 				<div className="container text-center">
 						{data}

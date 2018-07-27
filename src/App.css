@@ -39,7 +39,7 @@ height:100%;
 }
 
 .carousel-inner > .item > img{
-    height:500px;
+    height:80%;
     width: 100%;
 }
 
@@ -48,6 +48,7 @@ height:100%;
 }
 .carousel{
 	margin-top: 10px;
+	z-index:-9;
 }
 
 
