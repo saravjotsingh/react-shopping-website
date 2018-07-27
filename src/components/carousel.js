@@ -3,7 +3,9 @@ import React,{Component} from "react";
 class Carousel extends Component{
 	render(){
 		return(
+
 			<div className="container carousel">
+
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -18,11 +20,11 @@ class Carousel extends Component{
       </div>
 
       <div className="item">
-        <img src="https://images.wallpaperscraft.com/image/clothing_bright_lines_tubes_55294_1280x720.jpg"  alt="Chicago"/>
+        <img src="https://images.wallpaperscraft.com/image/adidas_brand_logo_people_sports_style_clothing_20392_1280x720.jpg"  alt="Chicago"/>
       </div>
     
       <div className="item">
-        <img src="https://images.wallpaperscraft.com/image/clothing_rope_grass_colorful_66166_1280x720.jpg"   alt="New york"/>
+        <img src="https://images.wallpaperscraft.com/image/man_model_hipster_street_city_101267_1280x720.jpg"   alt="New york"/>
       </div>
     </div>
 

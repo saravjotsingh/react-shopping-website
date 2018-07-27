@@ -4,7 +4,7 @@ import './App.css';
 
 import Carousel from "./components/carousel.js"
 import Item from "./components/items.js"
-
+import Footer from './components/footer.js'
 import $ from 'jquery';
 
 
@@ -35,15 +35,14 @@ changeClass=()=>{
       </div>
       <div class="collapse navbar-collapse" id="exampleNavComponents">
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#">Clothing</a></li>
-          <li><a href="#">Footwears</a></li>
-          <li><a href="#">Electronics</a></li>
+  
         </ul>
       </div>
     </div>
   </nav>
 <Carousel/>
  <Item/>
+<Footer/>
 
 
 
