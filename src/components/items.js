@@ -77,6 +77,16 @@ emptyCart=()=>{
 
 }
 
+deleteItem=(i)=>{
+	var cartData = this.state.cart;
+	
+	cartData.splice(i,1);
+	this.setState({
+		cart:cartData
+	})
+	
+}
+
 
 addToCart=(index)=>{
 	var cartData  = this.state.cart;
@@ -111,7 +121,7 @@ open=()=>{
 
 	render(){
 		var cart = this.state.cart;
-		console.log(cart.length)
+		//console.log(cart.length)
 		var data = datas.map((d,i)=>{
 			return(<div key={i} className="col-sm-4" onMouseEnter={()=>this.addOption(i)} onMouseLeave={()=>this.addOption1(i)}>
 						<div className={'data-'+ i + " " + "hello"} >
@@ -131,7 +141,7 @@ open=()=>{
 				<div className="container text-center">
 						{data}
 				</div>
-				<Cart cartData={cart} emptyCart={this.emptyCart}/>
+				<Cart cartData={cart} deleteItem={this.deleteItem} emptyCart={this.emptyCart}/>
 				</div>
 				
 			);

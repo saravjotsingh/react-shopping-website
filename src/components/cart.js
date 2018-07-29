@@ -29,9 +29,16 @@ class Cart extends Component{
   }
 
   cancelItem=(i)=>{
-    console.log("hello",i)
     $(".cart-name"+i).css("text-decoration","line-through");
     $(".cart-price"+i).css("text-decoration","line-through");
+  }
+
+
+
+  cancelItem1=(i)=>{
+    console.log("abbbcfff");
+    $(".cart-name"+i).css("text-decoration","");
+    $(".cart-price"+i).css("text-decoration","");
   }
 
   render(){
@@ -41,7 +48,7 @@ class Cart extends Component{
       amount = amount + data.price
       return(
             <div className="row cart-info">
-              <div className="col-sm-1" style={{pointer:"cursor"}} onMouseOver={()=>this.cancelItem(i)}>&times;</div>
+              <div className="col-sm-1" style={{pointer:"cursor"}} onClick={()=>this.props.deleteItem(i)} onMouseOut={()=>this.cancelItem1(i)} onMouseOver={()=>this.cancelItem(i)}>&times;</div>
               <div className="col-sm-3"><img  style={{height:'90px'}} src={data.image}/></div>
               <div className={"col-sm-3" + " " +"cart-name" + i + " "+ "cart-name"}>{data.name}</div>
               <div className={"col-sm-3" + " "+  "cart-price" + i + " " + "cart-price"}>₹{data.price}</div>

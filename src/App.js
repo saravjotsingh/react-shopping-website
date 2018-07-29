@@ -35,7 +35,7 @@ changeClass=()=>{
       </div>
       <div class="collapse navbar-collapse" id="exampleNavComponents">
         <ul class="nav navbar-nav navbar-right">
-  
+          
         </ul>
       </div>
     </div>
