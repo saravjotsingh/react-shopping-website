@@ -134,10 +134,17 @@ height:100%;
 }
 
 .cart-data{
+    height:400px;
 	position: absolute;
 	margin-top: 30px;
 	color: white;
+    overflow-y: auto;
+    overflow-x:hidden; 
+    
 
+}
+.cur{
+    cursor: pointer;
 }
 
 .cart-info{
